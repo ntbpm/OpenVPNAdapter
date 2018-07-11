@@ -1806,6 +1806,7 @@ namespace openvpn {
 
       bool do_encrypt(BufferAllocated& buf, const bool compress_hint)
       {
+      printf("do_encrypt...buf=%d", buf.size())
 	bool pid_wrap;
 
 	// compress packet
